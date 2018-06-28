@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ModAlmacen]">
+  <parameter name="VarCodigoBuscar" value="1"/>
+  <parameter name="VarNombreInsertar" value="Cigarros"/>
+  <test name="CategoriaTest">
+    <parameter name="VarCodigoBuscar" value="1"/>
+    <parameter name="VarNombreInsertar" value="Cigarros"/>
+    <classes>
+      <class name="pe.com.test.CategoriaTest"/>
+    </classes>
+  </test> <!-- CategoriaTest -->
+</suite> <!-- Failed suite [ModAlmacen] -->

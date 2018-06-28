@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TSTestSuite]">
+  <parameter name="navegador" value="firefox"/>
+  <parameter name="rutaArchivo" value="C:\Raphael\Data\DataArtista.xls"/>
+  <parameter name="rutaArchivo2" value="C:\Raphael\Data\DataArtista2.xls"/>
+  <parameter name="rutaArchivo3" value="C:\Raphael\Data\DataArtista3.xls"/>
+  <parameter name="remoto" value="0"/>
+  <parameter name="fuenteDatos" value="Excel"/>
+  <test name="ArtistaWebDriverTest">
+    <parameter name="navegador" value="firefox"/>
+    <parameter name="rutaArchivo" value="C:\Raphael\Data\DataArtista.xls"/>
+    <parameter name="rutaArchivo2" value="C:\Raphael\Data\DataArtista2.xls"/>
+    <parameter name="rutaArchivo3" value="C:\Raphael\Data\DataArtista3.xls"/>
+    <parameter name="remoto" value="0"/>
+    <parameter name="fuenteDatos" value="Excel"/>
+    <classes>
+      <class name="pe.com.test.seleniumwd.ArtistaWebDriverTest"/>
+    </classes>
+  </test> <!-- ArtistaWebDriverTest -->
+  <test name="ArtistaWebDriverTest(failed)">
+    <parameter name="navegador" value="firefox"/>
+    <parameter name="rutaArchivo" value="C:\Raphael\Data\DataArtista.xls"/>
+    <parameter name="rutaArchivo2" value="C:\Raphael\Data\DataArtista2.xls"/>
+    <parameter name="rutaArchivo3" value="C:\Raphael\Data\DataArtista3.xls"/>
+    <parameter name="remoto" value="0"/>
+    <parameter name="fuenteDatos" value="Excel"/>
+    <classes>
+      <class name="pe.com.test.seleniumwd.ArtistaWebDriverTest">
+        <methods>
+          <include name="insertarArtista" invocation-numbers="0 1"/>
+          <include name="actualizarArtista"/>
+          <include name="inicioClase"/>
+          <include name="eliminarArtista"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- pe.com.test.seleniumwd.ArtistaWebDriverTest -->
+    </classes>
+  </test> <!-- ArtistaWebDriverTest(failed) -->
+</suite> <!-- Failed suite [TSTestSuite] -->

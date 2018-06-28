@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets" template="template.xhtml">
+	<ui:define name="body">
+		<div class="main-colum">
+			<!-- wrap -->
+			<div class="box-wrap-main">
+				<div class="box-wrap-header">
+					<div class="pull-left">
+						<div class="title-main">#{m['actualizarAdmArtista.cabecera']}</div>
+					</div>
+				</div>
+				<div class="box-form">
+					<h:form prependId="false" id="frmIndex">
+						 	<h:panelGrid columns="3" id="panel02">
+
+			                    <h:outputLabel value="#{m['actualizarAdmArtista.codigo']}: *" />
+			                    <h:outputLabel value="&#160;" />
+			                    <h:inputText id="txtCodigo" label="#{m['actualizarAdmArtista.codigo']}" value="#{artistaController.artistaGuardar.idArtista}" readonly="true" required="true" size="50" class="form-control"/>
+			
+			                    <h:outputLabel value="#{m['actualizarAdmArtista.nombre']}: *" />
+			                    <h:outputLabel value="&#160;" />
+			                    <h:inputText id="txtNombre" label="#{m['actualizarAdmArtista.nombre']}" value="#{artistaController.artistaGuardar.nombre}" required="true" size="50" class="form-control"/>
+								
+								<h:outputLabel value="#{m['actualizarAdmArtista.tipoDocumento']}: *" />
+			                    <h:outputLabel value="&#160;" />
+			                    <h:inputText id="txtTipoDocumento" label="#{m['actualizarAdmArtista.tipoDocumento']}" value="#{artistaController.artistaGuardar.tipoDocumento}" required="true" size="50" class="form-control"/>
+								
+			                    <h:outputLabel value="#{m['actualizarAdmArtista.DNI']}: *" />
+			                    <h:outputLabel value="&#160;" />
+			                    <h:inputText id="txtDNI" label="#{m['actualizarAdmArtista.DNI']}" value="#{artistaController.artistaGuardar.DNI}" required="true" size="50" class="form-control"/>
+								
+			                    <h:outputLabel value="#{m['actualizarAdmArtista.fechaNac']}: *" />
+			                    <h:outputLabel value="&#160;" />
+			                    <h:inputText id="txtFechaNac" label="#{m['actualizarAdmArtista.fechaNac']}" value="#{artistaController.artistaGuardar.fechaNac}" required="true" size="50" class="form-control"/>
+								
+			                    <h:outputLabel value="#{m['actualizarAdmArtista.sexo']}: *" />
+			                    <h:outputLabel value="&#160;" />
+			                    <h:inputText id="txtSexo" label="#{m['actualizarAdmArtista.sexo']}" value="#{artistaController.artistaGuardar.sexo}" required="true" size="50" class="form-control"/>
+								
+			                    <h:outputLabel value="#{m['actualizarAdmArtista.genero']}: *" />
+			                    <h:outputLabel value="&#160;" />
+			                    <h:inputText id="txtGenero" label="#{m['actualizarAdmArtista.genero']}" value="#{artistaController.artistaGuardar.genero}" required="true" size="50" class="form-control"/>
+								
+								<h:outputLabel value="&#160;" />
+								<h:outputLabel value="&#160;" />
+								<h:outputLabel value="&#160;" />
+								
+			                    <h:outputLabel value="" />
+			                    <h:outputLabel value="" /> 
+			                    <h:panelGrid columns="2"> 
+			                        <p:commandButton id="btnGuardar" value="#{m['template.guardar']}" action="#{artistaController.actualizar}" update="panel02" style="width: 150px" class="btn-s btn-search"/>    
+			                        <p:commandButton id="btnVolver" value="#{m['template.volver']}" action="mntAdmArtista" immediate="true" ajax="false" style="width: 150px" class="btn-s btn-add"/>
+			                    </h:panelGrid>
+			
+			                </h:panelGrid>
+			
+			                <p:messages id="messages" showDetail="false" autoUpdate="true" />
+					</h:form>
+				</div>
+			</div>
+		</div>
+	</ui:define>
+</ui:composition>
+

@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TSTestSuite" parallel="false">
+	<test name="AppTest" enabled="false">
+		<parameter name="nombreInsertar" value="Luis Fonsi" />
+		<parameter name="nombreActualizar" value="Justin Bieber" />
+		<classes>
+			<class name="pe.com.test.testng.AppTest" />
+		</classes>
+	</test>
+	<test name="ArtistaWebDriverTest">
+		<parameter name="navegador" value="firefox"/>
+		<parameter name="remoto" value="0"/>
+		<parameter name="fuenteDatos" value="Excel"/>
+		<parameter name="rutaArchivo" value="C:\Raphael\Data\DataArtista.xls"/>
+		<parameter name="rutaArchivo2" value="C:\Raphael\Data\DataArtista2.xls"/>
+		<parameter name="rutaArchivo3" value="C:\Raphael\Data\DataArtista3.xls"/>
+		<classes>
+			<class name="pe.com.test.seleniumwd.ArtistaWebDriverTest" />
+		</classes>
+	</test>
+</suite> 

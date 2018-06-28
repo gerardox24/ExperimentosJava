@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="1707" started-at="2018-06-06T18:03:21Z" finished-at="2018-06-06T18:03:23Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="1707" started-at="2018-06-06T18:03:21Z" finished-at="2018-06-06T18:03:23Z">
+      <class name="pe.com.test.testng.AppTest">
+        <test-method status="PASS" signature="inicioMetodo()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="inicioMetodo" is-config="true" duration-ms="93" started-at="2018-06-06T18:03:21Z" finished-at="2018-06-06T18:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicioMetodo -->
+        <test-method status="PASS" signature="inicioClase()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="inicioClase" is-config="true" duration-ms="0" started-at="2018-06-06T18:03:21Z" finished-at="2018-06-06T18:03:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicioClase -->
+        <test-method status="PASS" signature="insertar()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="insertar" duration-ms="1192" started-at="2018-06-06T18:03:21Z" finished-at="2018-06-06T18:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertar -->
+        <test-method status="PASS" signature="insertarDataProvider(pe.com.bean.ArtistaBean)[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="insertarDataProvider" duration-ms="47" started-at="2018-06-06T18:03:23Z" data-provider="datosEntrada" finished-at="2018-06-06T18:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ArtistaBean: Luis Fonsi]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertarDataProvider -->
+        <test-method status="PASS" signature="insertarDataProvider(pe.com.bean.ArtistaBean)[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="insertarDataProvider" duration-ms="79" started-at="2018-06-06T18:03:23Z" data-provider="datosEntrada" finished-at="2018-06-06T18:03:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ArtistaBean: Marcelo Motta]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertarDataProvider -->
+        <test-method status="PASS" signature="actualizar()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="actualizar" duration-ms="78" started-at="2018-06-06T18:03:23Z" depends-on-methods="pe.com.test.testng.AppTest.insertar" finished-at="2018-06-06T18:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- actualizar -->
+        <test-method status="PASS" signature="obtener()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="obtener" duration-ms="31" started-at="2018-06-06T18:03:23Z" depends-on-methods="pe.com.test.testng.AppTest.actualizar" finished-at="2018-06-06T18:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- obtener -->
+        <test-method status="PASS" signature="eliminar()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="eliminar" duration-ms="62" started-at="2018-06-06T18:03:23Z" depends-on-methods="pe.com.test.testng.AppTest.obtener" finished-at="2018-06-06T18:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- eliminar -->
+        <test-method status="PASS" signature="finClase()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="finClase" is-config="true" duration-ms="0" started-at="2018-06-06T18:03:23Z" finished-at="2018-06-06T18:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finClase -->
+        <test-method status="PASS" signature="finMetodo()[pri:0, instance:pe.com.test.testng.AppTest@1d5d5621]" name="finMetodo" is-config="true" duration-ms="0" started-at="2018-06-06T18:03:23Z" finished-at="2018-06-06T18:03:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finMetodo -->
+      </class> <!-- pe.com.test.testng.AppTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

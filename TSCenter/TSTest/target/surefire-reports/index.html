@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-TSTestSuite">
+              <span class="suite-name border-failed">TSTestSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-TSTestSuite">
+                    <span>C:\Raphael\TSCenter\TSTest\src\test\java\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-TSTestSuite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-TSTestSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-TSTestSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-TSTestSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-TSTestSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-TSTestSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">4 methods, 2 failed,  2 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-TSTestSuite" class="hide-methods failed suite-TSTestSuite"> (hide)</a> <!-- hide-methods failed suite-TSTestSuite -->
+                      <a href="#" panel-name="suite-TSTestSuite" class="show-methods failed suite-TSTestSuite"> (show)</a> <!-- show-methods failed suite-TSTestSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-TSTestSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TSTestSuite" title="pe.com.test.seleniumwd.ArtistaWebDriverTest" hash-for-method="insertarArtista(admin, clave,  , DNI, 74973927, 19/08/1998, M, Baladas, Nombre: Validation Error: Value is required.)">insertarArtista(admin, clave,  , DNI, 74973927, 19/08/1998, M, Baladas, Nombre: Validation Error: Value is required.)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TSTestSuite" title="pe.com.test.seleniumwd.ArtistaWebDriverTest" hash-for-method="insertarArtista(admin, clave, Raphael, DNI, 74973926, 19/08/1998, M, Baladas, Se guardó de manera correcta el Artist...)">insertarArtista(admin, clave, Raphael, DNI, 74973926, 19/08/1998, M, Baladas, Se guardó de manera correcta el Artist...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-TSTestSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-TSTestSuite" class="hide-methods skipped suite-TSTestSuite"> (hide)</a> <!-- hide-methods skipped suite-TSTestSuite -->
+                      <a href="#" panel-name="suite-TSTestSuite" class="show-methods skipped suite-TSTestSuite"> (show)</a> <!-- show-methods skipped suite-TSTestSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-TSTestSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TSTestSuite" title="pe.com.test.seleniumwd.ArtistaWebDriverTest" hash-for-method="actualizarArtista">actualizarArtista</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TSTestSuite" title="pe.com.test.seleniumwd.ArtistaWebDriverTest" hash-for-method="eliminarArtista">eliminarArtista</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-TSTestSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-TSTestSuite" class="panel TSTestSuite">
+          <div class="suite-TSTestSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">pe.com.test.seleniumwd.ArtistaWebDriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarArtista(admin, clave,  , DNI, 74973927, 19/08/1998, M, Baladas, Nombre: Validation Error: Value is required.)">
+                  </a> <!-- insertarArtista(admin, clave,  , DNI, 74973927, 19/08/1998, M, Baladas, Nombre: Validation Error: Value is required.) -->
+                  <span class="method-name">insertarArtista</span>
+                  <span class="parameters">(admin, clave,  , DNI, 74973927, 19/08/1998, M, Baladas, Nombre: Validation Error: Value is required.)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.ArtistaWebDriverTest.insertarArtista(ArtistaWebDriverTest.java:68)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="insertarArtista(admin, clave, Raphael, DNI, 74973926, 19/08/1998, M, Baladas, Se guardó de manera correcta el Artist...)">
+                  </a> <!-- insertarArtista(admin, clave, Raphael, DNI, 74973926, 19/08/1998, M, Baladas, Se guardó de manera correcta el Artist...) -->
+                  <span class="method-name">insertarArtista</span>
+                  <span class="parameters">(admin, clave, Raphael, DNI, 74973926, 19/08/1998, M, Baladas, Se guardó de manera correcta el Artista)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.ArtistaWebDriverTest.insertarArtista(ArtistaWebDriverTest.java:68)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TSTestSuite-class-failed -->
+          <div class="suite-TSTestSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">pe.com.test.seleniumwd.ArtistaWebDriverTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="actualizarArtista">
+                  </a> <!-- actualizarArtista -->
+                  <span class="method-name">actualizarArtista</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ArtistaWebDriverTest.actualizarArtista(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pe.com.test.seleniumwd.ArtistaWebDriverTest@2812cbfa] depends on not successfully finished methods
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="eliminarArtista">
+                  </a> <!-- eliminarArtista -->
+                  <span class="method-name">eliminarArtista</span>
+                  <div class="stack-trace">java.lang.Throwable: Method ArtistaWebDriverTest.eliminarArtista(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:pe.com.test.seleniumwd.ArtistaWebDriverTest@2812cbfa] depends on not successfully finished methods
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TSTestSuite-class-skipped -->
+        </div> <!-- panel TSTestSuite -->
+        <div panel-name="test-xml-TSTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Raphael\TSCenter\TSTest\src\test\java\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;TSTestSuite&quot;&gt;
+  &lt;test name=&quot;ArtistaWebDriverTest&quot;&gt;
+    &lt;parameter name=&quot;navegador&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;rutaArchivo&quot; value=&quot;C:\Raphael\Data\DataArtista.xls&quot;/&gt;
+    &lt;parameter name=&quot;rutaArchivo2&quot; value=&quot;C:\Raphael\Data\DataArtista2.xls&quot;/&gt;
+    &lt;parameter name=&quot;rutaArchivo3&quot; value=&quot;C:\Raphael\Data\DataArtista3.xls&quot;/&gt;
+    &lt;parameter name=&quot;remoto&quot; value=&quot;0&quot;/&gt;
+    &lt;parameter name=&quot;fuenteDatos&quot; value=&quot;Excel&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pe.com.test.seleniumwd.ArtistaWebDriverTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ArtistaWebDriverTest --&gt;
+  &lt;test name=&quot;ArtistaWebDriverTest(failed)&quot;&gt;
+    &lt;parameter name=&quot;navegador&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;rutaArchivo&quot; value=&quot;C:\Raphael\Data\DataArtista.xls&quot;/&gt;
+    &lt;parameter name=&quot;rutaArchivo2&quot; value=&quot;C:\Raphael\Data\DataArtista2.xls&quot;/&gt;
+    &lt;parameter name=&quot;rutaArchivo3&quot; value=&quot;C:\Raphael\Data\DataArtista3.xls&quot;/&gt;
+    &lt;parameter name=&quot;remoto&quot; value=&quot;0&quot;/&gt;
+    &lt;parameter name=&quot;fuenteDatos&quot; value=&quot;Excel&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;pe.com.test.seleniumwd.ArtistaWebDriverTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;insertarArtista&quot; invocation-numbers=&quot;0 1&quot;/&gt;
+          &lt;include name=&quot;actualizarArtista&quot;/&gt;
+          &lt;include name=&quot;inicioClase&quot;/&gt;
+          &lt;include name=&quot;eliminarArtista&quot;/&gt;
+          &lt;include name=&quot;tearDown&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- pe.com.test.seleniumwd.ArtistaWebDriverTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- ArtistaWebDriverTest(failed) --&gt;
+&lt;/suite&gt; &lt;!-- TSTestSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-TSTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for TSTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">ArtistaWebDriverTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">ArtistaWebDriverTest(failed) (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-TSTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for TSTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-TSTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for TSTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_TSTestSuite');
+function tableData_TSTestSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(4);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'insertarArtista')
+data.setCell(0, 2, 'pe.com.test.seleniumwd.ArtistaWebDriverTest')
+data.setCell(0, 3, 6086);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'insertarArtista')
+data.setCell(1, 2, 'pe.com.test.seleniumwd.ArtistaWebDriverTest')
+data.setCell(1, 3, 2510);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'eliminarArtista')
+data.setCell(2, 2, 'pe.com.test.seleniumwd.ArtistaWebDriverTest')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'actualizarArtista')
+data.setCell(3, 2, 'pe.com.test.seleniumwd.ArtistaWebDriverTest')
+data.setCell(3, 3, 0);
+window.suiteTableData['TSTestSuite']= { tableData: data, tableDiv: 'times-div-TSTestSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-TSTestSuite">
+              </div> <!-- times-div-TSTestSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-TSTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for TSTestSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-TSTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-TSTestSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">pe.com.test.seleniumwd.ArtistaWebDriverTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">inicioClase(firefox, 0)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertarArtista(admin, clave, Raphael, DNI, 74973926, 19/08/1998, M, Baladas, Se guardó de manera correcta el Artist...)</span>
+                <span class="method-start">22510 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">insertarArtista(admin, clave,  , DNI, 74973927, 19/08/1998, M, Baladas, Nombre: Validation Error: Value is required.)</span>
+                <span class="method-start">28814 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown</span>
+                <span class="method-start">31340 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

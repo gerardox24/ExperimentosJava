@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 3, Errors: 0, Skipped: 2, Time elapsed: 33.51 sec <<< FAILURE! - in TestSuite
+insertarArtista(pe.com.test.seleniumwd.ArtistaWebDriverTest)  Time elapsed: 6.226 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.ArtistaWebDriverTest.insertarArtista(ArtistaWebDriverTest.java:68)
+
+insertarArtista(pe.com.test.seleniumwd.ArtistaWebDriverTest)  Time elapsed: 2.492 sec  <<< FAILURE!
+java.lang.AssertionError: null
+	at pe.com.test.seleniumwd.ArtistaWebDriverTest.insertarArtista(ArtistaWebDriverTest.java:68)
+
+tearDown(pe.com.test.seleniumwd.ArtistaWebDriverTest)  Time elapsed: 2.774 sec  <<< FAILURE!
+org.openqa.selenium.SessionNotCreatedException: 
+Tried to run command without establishing a connection
+Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'
+System info: host: 'WIN-NO5VUV5PR36', ip: '192.168.175.129', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_161'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 60.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 4404, moz:profile: C:\Users\Operador\AppData\L..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 6.1, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: ab5f5d84-8684-46e4-a32e-7e84bf923bbc
+	at pe.com.test.seleniumwd.ArtistaWebDriverTest.tearDown(ArtistaWebDriverTest.java:97)
+
