@@ -11,9 +11,9 @@
 		<parameter name="navegador" value="firefox"/>
 		<parameter name="remoto" value="0"/>
 		<parameter name="fuenteDatos" value="Excel"/>
-		<parameter name="rutaArchivo" value="C:\Raphael\Data\DataArtista.xls"/>
-		<parameter name="rutaArchivo2" value="C:\Raphael\Data\DataArtista2.xls"/>
-		<parameter name="rutaArchivo3" value="C:\Raphael\Data\DataArtista3.xls"/>
+		<parameter name="rutaArchivo" value="C:\Jenkins\TSCenter\Data\DataArtista.xls"/>
+		<parameter name="rutaArchivo2" value="C:\Jenkins\TSCenter\Data\DataArtista2.xls"/>
+		<parameter name="rutaArchivo3" value="C:\Jenkins\TSCenter\Data\DataArtista3.xls"/>
 		<classes>
 			<class name="pe.com.test.seleniumwd.ArtistaWebDriverTest" />
 		</classes>
